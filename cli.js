@@ -81,4 +81,7 @@ scanner.onadvertisement = (ad) => {
         console.log(data)
     }
     mqttclient.publish(mqtt_topic, data)
+    if (ad.iBeacon && ad.iBeacon.uuid) {
+        mqttclient.publish(mqtt_topic + "/" + ad.iBeacon.uuid, data)
+    }
 };

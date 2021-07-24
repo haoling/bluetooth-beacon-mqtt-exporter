@@ -7,7 +7,7 @@ if ! grep -c "Raspberry Pi" /proc/device-tree/model; then
     exit 2
 fi
 
-DOCKER_IMAGE=tomdesinto/bluetooth-beacon-mqtt-exporter:rpi
+DOCKER_IMAGE=haoling/bluetooth-beacon-mqtt-exporter:rpi
 
 
 docker build \

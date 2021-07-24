@@ -45,7 +45,7 @@ Configuration is provided throught environment variables:
 
 ```sh
 MQTT_BROKER=mqtt://127.0.0.1   # url of a mqtt broker. For accepted protocols, refer to https://github.com/mqttjs/MQTT.js#connect
-MQTT_TOPIC=beacon              # mqtt topic beacon' advertisements will be published to
+MQTT_TOPIC=beacon              # mqtt topic beacon' advertisements will be published to, and each beacon UUID topic will create
 MQTT_RECONNECT_DELAY=5000      # in case of a mqtt disconnection, will wait this amount of milliseconds before retrying to connect
 LOG_PACKETS=no                 # yes/on/true/1 to log every advertisement package to the console
 ```
